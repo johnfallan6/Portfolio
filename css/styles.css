@@ -1,0 +1,28 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Cabin", cursive;
+}
+
+header {
+
+}
+
+footer {
+background-image: linear-gradient(rgb(196, 196, 196), gray);
+}
+
+.jumbotron {
+margin: 0;
+}
+
+.row.content {
+
+}
+
+.navbar {
+    background-color: #afafaf;
+}
+
