@@ -15,8 +15,8 @@
   </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-md navbar-light sticky-top">
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-md mx-auto navbar-light sticky-top"/>
     <div class="container">
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#portfolioNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -31,23 +31,23 @@
       </div>
     </div>
   </nav>
-
-  <header class="jumbotron jumbotron-fluid">
+<!-- Jumbotron -->
+  <header>
     <div class="container">
       <div class ="row row-content">    
         <div class ="col-xs-3 col-md-6">
-          <h1 class="display-4">John Allan</h1>
+          <h1 class="display-4 text-white">John Allan</h1>
           <hr class="my-4">
-          <h2>Web Developer</h2> 
+          <h2 class="text-white">Web Developer</h2> 
         </div>
         <div class="col-3 img-fluid">
-          <img src="../images/john head sticker.png" alt="Picture of me at Savage Race" width="200px" id="johnsHead">
+          <img src="../images/johns head picture.png" alt="Picture of me at Savage Race" id="johnsHead" />
         </div>
         </div>
       </div>
     </div>
   </header>
-
+<!-- Contact Me Modal -->
   <div id="contactModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -120,7 +120,7 @@
         </div>
       </div>
   </div> 
-
+<!-- About Me -->
   <div class="container">
       <div class ="row row-content">
           <div class ="col-sm-10 col-md-10">
@@ -129,39 +129,47 @@
                 <h3>Bio</h3>
                 <p> ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum quasi eligendi vitae in necessitatibus aperiam corrupti unde ea blanditiis, iure modi impedit rem ab cupiditate, mollitia ad aut doloribus!</p>
               </div>
-              <div class="col-6 mx-auto">
-                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+          </div>
+      </div>
+  </div>
+
+    <!-- Carousel -->
+  <div class ="container">
+      <div class="row row-content"> 
+          <div class="col-6 mx-auto">
+              <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
                       <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                       <li data-target="#homeCarousel" data-slide-to="1"></li>
                       <li data-target="#homeCarousel" data-slide-to="2"></li>
+                      <li data-target="#homeCarousel" data-slide-to="3"></li>
+                      <li data-target="#homeCarousel" data-slide-to="4"></li>
                   </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img class="d-block w-100 my-5" src="images/Kobe.JPEG" alt="My dog, Kobe at the lake" style="max-height: auto;" >
                     </div>
-                </div>   
-              </div>
-              </div>
+                </div>    
+              </div>   
           </div>
       </div>
-  </div>
+  </div>         
   
-
-  <footer>
+<!-- Footer -->
+  <footer class="site-footer">
     <div class="container">
       <div class="row">             
           <div class="col-4 col-sm-2 offset-1">
-            <h5>Links</h5>
+            <h5 class="text-white">Links</h5>
             <ul class="list-unstyled">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#aboutMe">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a data-toggle="modal" href="#contactModal">Contact</a></li>
             </ul>
           </div>
           <div class="col-6 col-sm-5">
-              <h5>Social</h5>
+              <h5 class="text-white">Social</h5>
               <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/johnfallan6/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -173,7 +181,6 @@
           </div>
       </div>
     </div>
-
   </footer>
     
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
