@@ -22,11 +22,16 @@ footer {
     padding-bottom: 5px;
 }
 
+#homeCarousel{
+    padding-bottom: 50px;
+}
+
 #carouselButton {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 100;
+    margin-bottom: 40px;
 }
 
 #johnsHead {   
@@ -45,5 +50,9 @@ header {
 
 .navbar {
     background-color: #ffffff;   
+}
+
+#btxLogo {
+    margin-bottom: 20px;
 }
 

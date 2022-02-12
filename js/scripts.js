@@ -37,15 +37,17 @@ $(function() {
           })
           sr.reveal('#aboutMe h2', {
             duration: 2000,
-            delay: 3000,
+            delay: 2000,
             origin: 'top',
-            distance: '50px',           
+            distance: '50px', 
+            viewFactor: 0.4          
           })
           sr.reveal('#aboutMe p', {
-            duration: 3000,
-            delay: 5000,
+            duration: 2500,
+            delay: 2500,
             origin: 'right',
-            distance: '400px'
+            distance: '400px',
+            viewFactor: 0.4
           })
           sr.reveal('#link-items', {
             duration: 2000,
@@ -55,23 +57,24 @@ $(function() {
             viewFactor: 0.4
           })
           sr.reveal('#copy-right', {
-            duration: 2000,
-            delay: 1000,
+            duration: 1000,
+            delay: 100,
             origin: 'bottom',
             distance: '100px',
             viewFactor: 0.4
           })
-
-          $('a[href*="#"]:not([href="#"])').click(function() {
-              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                  var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                  if (target.length) {
-                      $('html, body').animate({
-                          scrollTop: target.offset().top
-                      }, 1000);
-                      return false;
-                  }
-              }
+          sr.reveal('#btxLogo', {
+            duration: 2000,
+            delay: 1000,
+            origin: 'left',
+            distance: '400px'
           })
+          sr.reveal('.media-body', {
+            duration: 3000,
+            delay: 1000,
+            origin: 'right',
+            distance: '400px'
+          })
+
+          $('[data-toggle="tooltip"]').tooltip()
 })
